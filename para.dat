@@ -1,0 +1,131 @@
+&para
+dt = 0.1 ! Time step
+
+Nz = 401 ! Number of discretisation points in the Z direction
+
+Ny = 401 ! Number of discretization points in the y-direction [--]
+
+nstep = 17280 ! Number of iteration steps
+
+rho = 2400.0 ! Density [kg/m**3]
+
+c = 1000.0 ! Heat capacity [J/kg/K]
+
+k = 1.2 ! Thermal conductivity [W/m/K]
+
+rho1 = 2081.0 ! Density [kg/m**3]
+
+c1 = 851.0 ! Heat capacity [J/kg/K]
+
+k1 = 1.5 ! Thermal conductivity [W/m/K]
+
+rho2 = 1950.0 ! Density [kg/m**3]
+
+c2 = 900.0 ! Heat capacity [J/kg/K]
+
+k2 = 2.0 ! Thermal conductivity [W/m/K]
+
+Deltat_SS = 20000.0 ! Average duration of sunshine [s]
+
+Pswr_n = 300 ! Peak intensity for shortwave radiation [W/m**2]
+
+Tbase_air = -10 ! Base air temperature [°C]
+
+Tamp_air = 4 ! Amplitude at which the temperature varies [°C]
+
+L = 1.0 ! Length of the full half-space [m]
+
+Ly = 1.0 ! Width of the considered pavement [m]
+
+L1 = 0.15 ! Length of the first layer[m]
+
+L2 = 0.30 ! Length of the second layer [m]
+
+Delta_R = 0.14 ! Ribbon's spacing [m]
+
+Delta_z = 0.01 ! Ribbon's 'width' [m]
+
+N_winter = 2 ! Number of winter days for the shortwave solar radiation [--]
+
+sigma = 0.00000005670374419 ! Stefan-Boltzmann constant [W/m**2/K**4]
+
+eps_s = 0.55 ! Surface emittance [--]
+
+a = 0.0 ! Surface absorptivity [--]
+
+T_e  = 1 ! Constant temperature at depth z_e [°C]
+
+z_R = 0.05 ! Depth of the ribbon's layer [m]
+
+Tol = 0.0001 ! Find index of Ribbon's depth[m]
+
+power = 40.0 ! Power of Ribbon's layer [W/m]
+
+z_e = 10 ! Depth at which the temperature is constant (=T_e) [m]
+
+nribbon = 2 ! Number of ribbons [--]
+
+ribbony = 0.035 ! Ribbon's width [m]
+
+ribbonz = 0.005 ! Ribbon's height [m]
+
+latentheat = 335000000.0 ! Latent heat of fusion [MJ/ton]
+
+c2unfrozen = 1400 ! Heat capacity third layer for unfrozen soil [J/kg/K]
+
+c2frozen = 1100 ! Heat capacity third layer for frozen soil [J/kg/K]
+
+k2unfrozen = 1.4 ! Thermal conductivity third layer for unfrozen soil [W/m/K]
+
+k2frozen = 1.7 ! Thermal conductivity third layer for frozen soil [W/m/K]
+
+c1unfrozen = 970.0 ! Heat capacity third layer for unfrozen soil [J/kg/K]
+
+c1frozen = 860.0 ! Heat capacity third layer for frozen soil [J/kg/K]
+
+k1unfrozen = 1.6 ! Thermal conductivity third layer for unfrozen soil [W/m/K]
+
+k1frozen = 1.7 ! Thermal conductivity third layer for frozen soil [W/m/K]
+
+beta = 0.1 ! Soil characteristic factor exponent [--]
+
+theta_0_1 = 0.11 ! Initial volume water content layer 2 [--]
+
+theta_0_2 = 0.33 ! Initial volume water content layer 3 [--]
+
+temp_ref = 0.0 ! Soil freezing point [°C]
+
+depthsnowinit = 0.03 ! Initial depth of snow [m]
+
+absorb_snow = 0.1 ! Absorption coefficient of snow [--]
+
+c_snow = 2090 ! Heat capacity snow [J/kg/K]
+
+k_snow = 0.5 ! Thermal conductivity third layer for unfrozen soil [W/m/K]
+
+rho_snow = 871 ! Density snow [kg/m**3]
+
+emit_snow = 0.1 ! Emition coefficient of snow [--]
+
+theta_snow = 0.95 ! [--]
+
+k_snow_f = 1.8 ! [W/m/K]
+
+k_snow_u = 0.5 ! [W/m/K]
+
+c_snow_f = 2090.0 ! [J/kg/K]
+
+c_snow_u = 4200.00 ! [J/kg/K]
+
+c_air = 1000.0 ! [J/kg/K]
+
+k_air = 0.026 ! [W/m/K]
+
+rho_air = 1.25 ! [kg/m**3]
+
+temp_melted = 0.56 ! [°C]
+
+T_l = -0.05 ! Temperature threshold for activation of latent heat effects [°C]
+
+/
+
