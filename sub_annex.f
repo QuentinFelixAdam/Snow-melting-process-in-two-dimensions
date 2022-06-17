@@ -11,7 +11,7 @@ PRINT*,'-----------LOADING DATA------------'
 
 nlinescase = 0
 
-OPEN(36,FILE='Windspeedsynt.dat',STATUS='old')
+OPEN(36,FILE='Windspeed.dat',STATUS='old')
 
 DO
    READ(36,*,END=22)
@@ -21,7 +21,7 @@ END DO
 
 ALLOCATE(V_air(nlinescase))
 
-OPEN(36,FILE='Windspeedsynt.dat',STATUS='old')
+OPEN(36,FILE='Windspeed.dat',STATUS='old')
 
 DO i = 1,nlinescase
    READ(36,*) V_air(i)
@@ -33,7 +33,7 @@ PRINT*,'...'
 
 nlinescase = 0
 
-OPEN(36,FILE='Shortwavesynt.dat',STATUS='old')
+OPEN(36,FILE='Shortwave.dat',STATUS='old')
 
 DO
    READ(36,*,END=23)
@@ -43,7 +43,7 @@ END DO
 
 ALLOCATE(f_s(nlinescase))
 
-OPEN(36,FILE='Shortwavesynt.dat',STATUS='old')
+OPEN(36,FILE='Shortwave.dat',STATUS='old')
 
 DO i = 1,nlinescase
    READ(36,*) f_s(i)
@@ -56,7 +56,7 @@ PRINT*,'...'
 
 nlinescase = 0
 
-OPEN(36,FILE='Airtempsynt.dat',STATUS='old')
+OPEN(36,FILE='Airtemp.dat',STATUS='old')
 
 DO
    READ(36,*,END=24)
@@ -66,7 +66,7 @@ END DO
 
 ALLOCATE(T_air(nlinescase))
 
-OPEN(36,FILE='Airtempsynt.dat',STATUS='old')
+OPEN(36,FILE='Airtemp.dat',STATUS='old')
 
 DO i = 1,nlinescase
    READ(36,*) T_air(i)
@@ -78,7 +78,7 @@ PRINT*,'...'
 
 nlinescase = 0
 
-OPEN(36,FILE='Longwavesynt.dat',STATUS='old')
+OPEN(36,FILE='Longwave.dat',STATUS='old')
 
 DO
    READ(36,*,END=25)
@@ -88,7 +88,7 @@ END DO
 
 ALLOCATE(fD(nlinescase))
 
-OPEN(36,FILE='Longwavesynt.dat',STATUS='old')
+OPEN(36,FILE='Longwave.dat',STATUS='old')
 
 DO i = 1,nlinescase
    READ(36,*) fD(i)
